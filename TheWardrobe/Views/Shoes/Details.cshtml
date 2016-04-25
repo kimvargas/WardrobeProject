@@ -1,0 +1,89 @@
+﻿@model TheWardrobe.Models.Shoes
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container-fluid" id="tops">
+    <div class="jumbotron">
+        <h2 class="bold">
+            Tap-dancers
+        </h2>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/Home">TheWardrobe</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                    <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                    <li class="active">@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+                    <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" id="block-tops">
+        <div class="row">
+
+            <div>
+                <h2 id="ohforheavensake">Details</h2>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Photo)
+                    </dt>
+                    <dd>
+                        <a href="@Html.DisplayFor(model => model.Photo)">
+                            <img src="@Html.DisplayFor(model => model.Photo)" class="img-thumbnail" />
+                        </a>
+                    </dd>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Nickname)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Nickname)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Type)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Type)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Color)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Color)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Season)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Season)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Occasion)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Occasion)
+                    </dd>
+
+                </dl>
+            </div>
+            <p id="ohforheavensake">
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+            </p>
+        </div>
+    </div>
+</div>

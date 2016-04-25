@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "The Wardrobe";
+}
+
+
+<div class="container-fluid" id="home">
+    <div class="jumbotron">
+        <h2 class="bold">
+            "Welcome to The Wardrobe"
+        </h2>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/Home">TheWardrobe</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                    <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                    <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+                    <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="block">
+        <div class="row">
+            <div class="col-sm-6">
+                <br />
+                <div class="container" id="button-like">
+                    <h2 class="text-center bold" data-toggle="modal" data-trigger="hover" data-target="#enter"><br />Enter <br />the <br />Wardrobe <br /></h2>
+
+                    <div id="enter" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body" id="enter-img">
+                                    <ul>
+                                        <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                                        <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                                        <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+                                        <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2 style="font-family: 'Lovers Quarrel'; font-size: 1.5em;" class="text-right"> A door opens...<br />Adventures await...<br />The question remains:<br />What will you wear?</h2>
+            </div>
+        </div>
+    </div>
+</div>

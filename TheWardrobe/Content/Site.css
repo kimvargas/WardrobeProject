@@ -1,0 +1,156 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    height: 100%;
+    background-image: url(images/lucy_wardrobe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#home {
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ohforheavensake{
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* --------My Crap--------*/
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    padding-left: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+h2.bold{
+    font-weight: bold;
+}
+
+#block{
+    background-color: rgba(225,225,225,0.6);
+    color: #000000;
+    border-radius:6px 6px;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 3em;
+}
+#block-tops{
+    background-color: rgba(225,225,225,0.8);
+    color: #000000;
+    border-radius:6px 6px;
+    font-family: 'Noto Serif', Arial;
+    font-size: 1.5em;
+    /*padding-left: .5em;*/
+}
+
+#enter a{
+    color: #fcfbcb;
+}
+
+
+#enter a:hover, a:focus{
+    color: #cb9525;
+}
+
+#enter-img{
+    background-image: url(images/NarniaWardrobe.jpg);
+    background-size:cover;
+    padding-left:0.9em;
+}
+
+#button-like{
+    background-color: rgba(152,135,80,0.6);
+    color: #111111;
+    font-size:1.5em;
+    border-radius:6px 6px;
+    padding-bottom: 0.55em;
+}
+#button-like:hover{
+    background-color: rgba(147, 106, 9, 0.88);
+    color: #000000;
+}
+
+
+.img-thumbnail{
+    height: 175px;
+    max-width: 300px;
+}
+
+
+/* START OF Change the Navbar Colors/Font/Size */
+.navbar-brand{
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    padding-left: 30px;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+display:        inline;
+color:          red;                        
+font-family: 'Cinzel', serif;
+font-size:      1em;
+padding:        5px 20px;
+}
+
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+color:          lightgray;
+text-shadow:    none;
+}
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter { 
+color:          white;                      
+text-shadow:    none;
+}
+/* Adjust Menu colors - Active */
+.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li.current-menu-item > a:first-letter, 
+.navbar .nav > li.current-menu-ancestor > a:first-letter {
+color:          blue;
+text-shadow:    none;
+}
+
+/* Adjust dropdown Menu items (blue) text color, (yellow) shading and (green) border */
+.dropdown-menu > li > a {
+color:          blue;
+background:     yellow;
+border-bottom:  2px solid green;
+}
+
+/* Remove the Hover/Focus Colors  */
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a, 
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+color:          #5A5A5A;
+}
+/* END OF Change the Navbar Colors/Font/Size */
